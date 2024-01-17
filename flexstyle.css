@@ -1,0 +1,42 @@
+/* flex-wrap: can also be nowrap and wrap-reverse; */
+
+.flex-container {
+    display: flex;
+    background-color: red;
+    height: 600px; 
+    flex-flow:start;
+}
+
+h1 {
+    text-align: center;
+    color:rgb(0, 0, 0); 
+}
+.flex-container> div {
+    background-color: rgb(255, 166, 0);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+ #div1{
+    background-color: yellow;
+    color: black;
+    flex-grow: 3;
+}   
+
+#div2{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    align-self: center;
+    flex-shrink: 1;
+}
+
+#div3{
+    background-color: yellow;
+    color: black;
+    align-self: last baseline;
+    flex-wrap: wrap;
+}
